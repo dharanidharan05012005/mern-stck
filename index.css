@@ -1,0 +1,69 @@
+/* Reset & Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #8022d2, #3b0b65);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main Container */
+.main-container {
+    text-align: center;
+}
+
+/* Image Style */
+.hero-image {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enter Button */
+.enter-button a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #24edf4;
+    color: #111;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #24edf4(239, 150, 246, 0.4);
+    transition: 0.3s ease;
+}
+
+.enter-button a:hover {
+    background-color: #ed15ed;
+    box-shadow: 0px 8px 20px rgba(232, 108, 241, 0.6);
+    transform: scale(1.05);
+}
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind everything */
+    opacity: 0.5; /* Slight transparency */
+}
